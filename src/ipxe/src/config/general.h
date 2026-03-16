@@ -61,7 +61,7 @@ FILE_SECBOOT ( PERMITTED );
 
 /* Disable protocols not historically included in BIOS builds */
 #if defined ( PLATFORM_pcbios )
-  #undef DOWNLOAD_PROTO_HTTPS
+  //#undef DOWNLOAD_PROTO_HTTPS
   #undef HTTP_AUTH_NTLM
 #endif
 
@@ -147,7 +147,7 @@ FILE_SECBOOT ( PERMITTED );
   #undef CONSOLE_CMD
   #undef DIGEST_CMD
   #undef NTP_CMD
-  #undef PARAM_CMD
+  //#undef PARAM_CMD
   #undef PCI_CMD
   #undef USB_CMD
   #undef VLAN_CMD
